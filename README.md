@@ -1,6 +1,8 @@
 # Nginx Traffic Cone
 
-Tiny **reverse-proxy + static site** demo for first meetings with Nginx.
+Minimal Nginx config for local experiments: static site, JSON health endpoint, and a commented reverse-proxy example.
+
+## Run
 
 ```bash
 docker run --rm -p 8080:80 \
@@ -9,6 +11,8 @@ docker run --rm -p 8080:80 \
   nginx:1.25-alpine
 ```
 
-Backend/infra practice · serious config · unserious name.
+Then open http://localhost:8080 and http://localhost:8080/api/health.
 
-MIT · 2019
+## License
+
+MIT
